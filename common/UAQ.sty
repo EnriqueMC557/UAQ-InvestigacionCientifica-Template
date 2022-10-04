@@ -1,0 +1,68 @@
+% Interlineado del documento
+% \renewcommand{\baselinestretch}{1.5}
+
+% Espacio entre parrafos
+% \setlength{\parskip}{5px}
+
+%Configuración de márgenes
+\usepackage[left=2.5cm, top=4cm, right=2.5cm, nohead, foot=.5cm]{geometry}
+
+% Permite el manejo de caracteres especiales en el español
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{csquotes}
+
+% Permite manejo de gráficos
+\usepackage[graphicx]{realboxes}
+
+% Permite manejo de ecuaciones y símbolos matemáticos
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+% Permite colorear texto
+\usepackage{color}
+
+% Hipervínculos
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=black,
+    citecolor=black}
+
+% Permite que la sección bibliografía/referencias se muestre en el índice    
+\usepackage[nottoc]{tocbibind}
+
+\usepackage[pages=all]{background}
+\usepackage{titlesec}
+
+% Colores predefinidos
+\definecolor{RojoUAQ}{RGB}{182,32,32}
+
+% Formato títulos
+\titleformat*{\section}{\normalfont\Large\bfseries\color{RojoUAQ}}
+\titleformat*{\subsection}{\normalfont\large\bfseries\color{RojoUAQ}}
+\titleformat*{\subsubsection}{\normalfont\normalsize\bfseries\color{RojoUAQ}}
+
+
+%\usepackage[backend=biber, style=ieee]{biblatex}
+%\addbibresource{../referencias.bib}
+
+%
+
+%\usepackage{times}
+%\usepackage{pdflscape}
+%\usepackage{lscape}
+
+%\usepackage{subfig}
+%\usepackage{bm,upgreek}
+%\usepackage{afterpage}
+%\usepackage{rotating}
+%\usepackage{multirow}
+%\usepackage{longtable}
+%\usepackage{parskip}
+%\usepackage{slashbox}
+%\usepackage{float}
+

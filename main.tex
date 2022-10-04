@@ -1,0 +1,66 @@
+\documentclass[12pt, letterpaper, spanish, twoside]{article}
+\AddToHook{cmd/section/before}{\newpage}
+\usepackage{./common/UAQ}
+
+\graphicspath{{./figures/}}
+
+\begin{document}
+
+\input{./chapters/portada}
+
+\backgroundsetup{
+	scale = 1,
+	angle = 0,
+	opacity = 1,
+	contents = {
+		\includegraphics[width=\paperwidth]{BodyBackground.pdf}
+	}
+}
+
+\pagenumbering{roman}
+\tableofcontents
+
+\pagenumbering{arabic}
+\section*{Datos generales}
+\addcontentsline{toc}{section}{Datos generales}
+\input{./chapters/0_generales}
+
+\section{Resumen}
+\input{./chapters/1_resumen}
+
+\section{Antecedentes}
+\input{./chapters/2_antecedentes}
+
+\section{Justificación}
+\input{./chapters/3_justificacion}
+
+\section{Descripción del problema}
+\input{./chapters/4_problema}
+
+\section{Fundamentación teórica}
+\input{./chapters/5_fundamentacion}
+
+\section{Hipótesis}
+\input{./chapters/6_hipotesis}
+
+\section{Objetivos}
+\input{./chapters/7_objetivos}
+
+\section{Metodología}
+\input{./chapters/8_metodologia}
+
+\section{Recursos}
+\input{./chapters/9_recursos}
+
+\section{Alcance del proyecto}
+\input{./chapters/10_alcane}
+
+\section{Resultados esperados}
+\input{./chapters/11_resultados}
+
+\nocite{*} % Para mostrar todas las refencias sin citarlas
+\renewcommand{\refname}{Referencias bibliográficas}
+\bibliographystyle{IEEEtran}
+\bibliography{referencias}
+
+\end{document}
