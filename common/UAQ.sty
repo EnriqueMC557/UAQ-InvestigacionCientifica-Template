@@ -1,3 +1,16 @@
+% Plantilla latex para protocolo de tesis de posgrado en la 
+% Facultad de Ingeniería, Universidad Autónoma de Querétaro
+%
+% @author {Gerardo Hernández-Nava, Enrique Mena-Camilo, Sheila Leyva-López}
+% @email {gerardohn.uam@gmail.com, enriquemece97@gmail.com, sheileyva29@gmail.com}
+% @year 2022
+% @version 1.0
+% @license CC-BY-NC
+%
+% Se agradecen sus comentarios, contribuciones, 
+% reporte de bugs y la difusión de esta plantilla
+
+
 % Interlineado del documento
 % \renewcommand{\baselinestretch}{1.5}
 
@@ -9,8 +22,11 @@
 
 % Permite el manejo de caracteres especiales en el español
 \usepackage[utf8]{inputenc}
-\usepackage[spanish]{babel}
+\usepackage[spanish.lcroman]{babel}
 \usepackage{csquotes}
+
+% Permite el combiar el espaciado en el índice
+\usepackage{tocloft}
 
 % Permite manejo de gráficos
 \usepackage[graphicx]{realboxes}
@@ -46,11 +62,29 @@
 \titleformat*{\subsection}{\normalfont\large\bfseries\color{RojoUAQ}}
 \titleformat*{\subsubsection}{\normalfont\normalsize\bfseries\color{RojoUAQ}}
 
+% Fomato de secciones
+\renewcommand\thesection{\Roman{section}}
+\renewcommand\thesubsection{\alph{subsection}}
+%\usepackage[shortlabels]{enumitem}
+%\setlist[enumerate, 1]{a)}
+\renewcommand{\thesubsubsection}{\alph{subsubsection}}
+
+% Formato de viñetas (sin enumerar)
+\renewcommand{\labelitemi}{\textcolor{RojoUAQ}{$\bullet$}}
+\renewcommand{\labelitemii}{\textcolor{RojoUAQ}{\footnotesize$\bullet$}}
+\renewcommand{\labelitemiii}{\textcolor{RojoUAQ}{\tiny$\bullet$}}
+
+% Formato de viñetas (numeradas)
+\renewcommand{\labelenumi}{\textcolor{RojoUAQ}{\alph{enumi}.}}
+\renewcommand{\labelenumii}{\textcolor{RojoUAQ}{\footnotesize\alph{enumii}.}}
+\renewcommand{\labelenumiii}{\textcolor{RojoUAQ}{\roman{enumiii}.}}
+
+
+
+
 
 %\usepackage[backend=biber, style=ieee]{biblatex}
 %\addbibresource{../referencias.bib}
-
-%
 
 %\usepackage{times}
 %\usepackage{pdflscape}
@@ -65,4 +99,3 @@
 %\usepackage{parskip}
 %\usepackage{slashbox}
 %\usepackage{float}
-

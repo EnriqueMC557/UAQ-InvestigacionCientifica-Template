@@ -1,8 +1,22 @@
+% Plantilla latex para protocolo de tesis de posgrado en la 
+% Facultad de Ingeniería, Universidad Autónoma de Querétaro
+%
+% @author {Gerardo Hernández-Nava, Enrique Mena-Camilo, Sheila Leyva-López}
+% @email {gerardohn.uam@gmail.com, enriquemece97@gmail.com, sheileyva29@gmail.com}
+% @year 2022
+% @version 1.0
+% @license CC-BY-NC
+%
+% Se agradecen sus comentarios, contribuciones, 
+% reporte de bugs y la difusión de esta plantilla
+
+
 \documentclass[12pt, letterpaper, spanish, twoside]{article}
 \AddToHook{cmd/section/before}{\newpage}
 \usepackage{./common/UAQ}
 
 \graphicspath{{./figures/}}
+
 
 \begin{document}
 
@@ -17,7 +31,10 @@
 	}
 }
 
-\pagenumbering{roman}
+\pagenumbering{\Roman}
+\setlength{\cftsecnumwidth}{3em} %Se cambia el espacio entre el item y el nombre de la seccion
+\setlength{\cftsubsecindent}{1.3cm}
+\setlength{\cftsubsubsecindent}{2.4cm}
 \tableofcontents
 
 \pagenumbering{arabic}
@@ -53,7 +70,7 @@
 \input{./chapters/9_recursos}
 
 \section{Alcance del proyecto}
-\input{./chapters/10_alcane}
+\input{./chapters/10_alcance}
 
 \section{Resultados esperados}
 \input{./chapters/11_resultados}
