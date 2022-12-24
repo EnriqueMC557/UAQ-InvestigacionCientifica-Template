@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Gerardo"
+  given-names: "Hernández-Nava"
+  orcid: "https://orcid.org/0000-0002-8685-1003"
+- family-names: "Enrique"
+  given-names: "Mena-Camilo"
+  orcid: "https://orcid.org/0000-0001-8353-9017"
+- family-names: "Sheila"
+  given-names: "Leyva-López"
+  orcid: "https://orcid.org/0000-0003-3634-8351"
+title: "UAQ-InvestigacionCientifica-Template"
+version: 1.0
+doi: 10.5281/zenodo.7479023
+date-released: 2022-24-10
+url: "https://github.com/EnriqueMC557/UAQ-InvestigacionCientifica-Template/"
